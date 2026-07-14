@@ -1,0 +1,150 @@
+.leads-page {
+  padding: 20px;
+  width: 100%;
+}
+
+.leads-page-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  background: linear-gradient(45deg, #fff, #ff6b6b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.leads-page-subtitle {
+  color: #94a3b8;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+// Легенда
+.leads-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.leads-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.leads-legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  &--green {
+    background: #6bcb77;
+  }
+
+  &--red {
+    background: #ff4444;
+  }
+
+  &--blue {
+    background: #4285f4;
+  }
+}
+
+.leads-table-container {
+  background: #141820;
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 30px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leads-table-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.leads-table-wrapper {
+  overflow-x: auto;
+}
+
+.leads-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 800px;
+
+  th {
+    text-align: center;
+    color: #94a3b8;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-bottom: 2px solid rgba(255, 107, 107, 0.3);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  td {
+    text-align: center;
+    padding: 10px 12px;
+    color: #e2e8f0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 107, 107, 0.08);
+    }
+  }
+
+  .amount--red {
+    color: #ff4444;
+    font-weight: 700;
+  }
+
+  .amount--green {
+    color: #6bcb77;
+    font-weight: 700;
+  }
+
+  .amount--blue {
+    color: #4285f4;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .leads-page-title {
+    font-size: 24px;
+  }
+
+  .leads-table-container {
+    padding: 16px;
+  }
+
+  .leads-table-title {
+    font-size: 18px;
+  }
+
+  .leads-legend {
+    gap: 16px;
+  }
+}
